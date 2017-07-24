@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1500881257 source:/root/selstr/selstr/get_str.c
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+
+1500881073 source:/root/selstr/selstr/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"get_str.h"
+
+1500881303 /root/selstr/selstr/get_str.h
+
