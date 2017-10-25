@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "headers/get_str.h"
+#include "get_str.h"
 
 int main(int argc, char** argv){
     if(argc < 2 || argc > 3 ||  (!strcmp("--help", argv[1])|| !strcmp("-h", argv[1]))){
