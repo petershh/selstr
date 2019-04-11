@@ -3,7 +3,7 @@
 all: selstr
 
 get_str.o: get_str.c
-	gcc -c get_str.c -o get_str.o
+	gcc -c get_str.c -Iheaders -o get_str.o
 
 main.o: main.c get_str.c
 	gcc -c main.c -Iheaders -o main.o

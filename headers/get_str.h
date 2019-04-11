@@ -1,9 +1,9 @@
 #ifndef GET_STR
 #define GET_STR
 
-int get_str(char** );
+int get_str(char**);
 
-void show_help();
+void show_help(void);
 
 void to_lower_case(char**);
 

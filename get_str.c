@@ -2,11 +2,14 @@
 #include<stdlib.h>
 #include<stdio.h>
 
+#include "get_str.h"
+
 int get_str(char** buf){
+	int i;
 	char symbol;
 	if(!*buf) free(*buf);
 	*buf = malloc(sizeof(char));
-	int i = 0;
+	i = 0;
 	while(scanf("%c", &symbol)==1 && symbol != '\n'){
 		i++;
 		*buf = realloc(*buf, i*sizeof(char));
@@ -17,7 +20,7 @@ int get_str(char** buf){
 	return i;
 }
 
-void show_help(){
+void show_help(void){
     puts("selstr - text filtering");
     puts("usage: <command> | selstr [-i/--ignorecase] <string>\n\n");
     puts("-i/--ignorecase\t\tfilter text ignoring case\n");
